@@ -1,11 +1,18 @@
-# لیست ارزهای دیجیتال برای بررسی
+# لیست ارزهای دیجیتالی که می‌خواهیم بررسی کنیم (با IDهای CoinGecko)
 CRYPTOCURRENCIES = [
-    "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT",
-    "ADAUSDT", "DOGEUSDT", "SHIBUSDT", "DOTUSDT", "MATICUSDT",
-    "LTCUSDT", "AVAXUSDT", "LINKUSDT", "UNIUSDT", "ATOMUSDT",
+    {"id": "bitcoin", "symbol": "btc", "name": "Bitcoin"},
+    {"id": "ethereum", "symbol": "eth", "name": "Ethereum"},
+    {"id": "binancecoin", "symbol": "bnb", "name": "BNB"},
+    {"id": "solana", "symbol": "sol", "name": "Solana"},
+    {"id": "ripple", "symbol": "xrp", "name": "XRP"},
+    {"id": "cardano", "symbol": "ada", "name": "Cardano"},
+    {"id": "dogecoin", "symbol": "doge", "name": "Dogecoin"},
+    {"id": "shiba-inu", "symbol": "shib", "name": "Shiba Inu"},
+    {"id": "polkadot", "symbol": "dot", "name": "Polkadot"},
+    {"id": "matic-network", "symbol": "matic", "name": "Polygon"},
 ]
 
-# تنظیمات استراتژی اسکالپینگ
+# تنظیمات استراتژی
 SCALPING_SETTINGS = {
     'rsi_period': 14,
     'rsi_overbought': 70,
@@ -18,17 +25,19 @@ SCALPING_SETTINGS = {
     'macd_signal': 9,
     'bb_period': 20,
     'bb_std': 2,
-    'volume_change_threshold': 1.5,  # تغییر حجم 50٪
-    'profit_target_percent': 1.5,    # هدف سود 1.5٪
-    'stop_loss_percent': 0.7,        # حد ضرر 0.7٪
+    'volume_change_threshold': 1.5,
+    'profit_target_percent': 1.5,
+    'stop_loss_percent': 0.7,
 }
 
-# تنظیمات API
-BINANCE_BASE_URL = "https://api.binance.com"
-BINANCE_KLINE_ENDPOINT = "/api/v3/klines"
-BINANCE_TICKER_ENDPOINT = "/api/v3/ticker/price"
+# تنظیمات API CoinGecko
+BASE_URL = "https://api.coingecko.com/api/v3"
+OHLC_ENDPOINT = "/coins/{id}/ohlc"
+TICKER_ENDPOINT = "/simple/price"
 
-# تایم فریم و تعداد کندل‌ها
-TIMEFRAME = "30m"  # تایم فریم 30 دقیقه
-KLINE_SIZE = 100   # تعداد کندل‌ها
+# تنظیمات تایم فریم (بر حسب روز)
+TIMEFRAME_DAYS = 1  # داده‌های روزانه
+DATA_POINTS = 100   # تعداد نقاط داده
+
+# مسیر فایل‌های داده
 SIGNALS_FILE = "data/signals.json"
