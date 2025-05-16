@@ -1,0 +1,45 @@
+name: Crypto Signal Generator
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'  # هر 2 ساعت
+    - cron: '0 */4 * * *'  # هر 4 ساعت برای گزارش وضعیت
+
+  workflow_dispatch:  # برای اجرای دستی
+
+jobs:
+  analyze-crypto:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+        
+      - name: Run crypto analyzer
+        if: github.event.schedule != '0 */4 * * *'  # فقط در زمان‌بندی 2 ساعته اجرا شود
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python src/crypto_analyzer.py
+        
+      - name: Run signal status reporter
+        if: github.event.schedule == '0 */4 * * *'  # فقط در زمان‌بندی 4 ساعته اجرا شود
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python src/signal_tracker.py --report
+        
+      - name: Commit updated signals data
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add data/signals.json
+          git commit -m "Update signals data" || echo "No changes to commit"
+          git push
