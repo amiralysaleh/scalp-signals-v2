@@ -1,18 +1,11 @@
-# لیست ارزهای دیجیتالی که می‌خواهیم بررسی کنیم (با IDهای CoinGecko)
+# لیست ارزهای دیجیتال برای بررسی
 CRYPTOCURRENCIES = [
-    {"id": "bitcoin", "symbol": "btc", "name": "Bitcoin"},
-    {"id": "ethereum", "symbol": "eth", "name": "Ethereum"},
-    {"id": "binancecoin", "symbol": "bnb", "name": "BNB"},
-    {"id": "solana", "symbol": "sol", "name": "Solana"},
-    {"id": "ripple", "symbol": "xrp", "name": "XRP"},
-    {"id": "cardano", "symbol": "ada", "name": "Cardano"},
-    {"id": "dogecoin", "symbol": "doge", "name": "Dogecoin"},
-    {"id": "shiba-inu", "symbol": "shib", "name": "Shiba Inu"},
-    {"id": "polkadot", "symbol": "dot", "name": "Polkadot"},
-    {"id": "matic-network", "symbol": "matic", "name": "Polygon"},
+    "bitcoin", "ethereum", "binancecoin", "solana", "ripple",
+    "cardano", "dogecoin", "shiba-inu", "polkadot", "matic-network",
+    "litecoin", "avalanche-2", "chainlink", "uniswap", "cosmos"
 ]
 
-# تنظیمات استراتژی
+# تنظیمات استراتژی اسکالپینگ
 SCALPING_SETTINGS = {
     'rsi_period': 14,
     'rsi_overbought': 70,
@@ -25,19 +18,16 @@ SCALPING_SETTINGS = {
     'macd_signal': 9,
     'bb_period': 20,
     'bb_std': 2,
-    'volume_change_threshold': 1.5,
-    'profit_target_percent': 1.5,
-    'stop_loss_percent': 0.7,
+    'volume_change_threshold': 1.5,  # تغییر حجم 50٪
+    'profit_target_percent': 1.5,    # هدف سود 1.5٪
+    'stop_loss_percent': 0.7,        # حد ضرر 0.7٪
 }
 
-# تنظیمات API CoinGecko
-BASE_URL = "https://api.coingecko.com/api/v3"
-OHLC_ENDPOINT = "/coins/{id}/ohlc"
-TICKER_ENDPOINT = "/simple/price"
+# تنظیمات API
+COINGECKO_BASE_URL = "https://api.coingecko.com/api/v3"
+COINGECKO_MARKET_CHART_ENDPOINT = "/coins/{id}/market_chart"
+COINGECKO_PRICE_ENDPOINT = "/simple/price"
 
-# تنظیمات تایم فریم (بر حسب روز)
-TIMEFRAME_DAYS = 1  # داده‌های روزانه
-DATA_POINTS = 100   # تعداد نقاط داده
-
-# مسیر فایل‌های داده
+# تایم فریم و تعداد کندل‌ها
+TIMEFRAME_IN_DAYS = 1  # تعداد روزها برای دریافت داده‌های کندل (1 روز = 24 ساعت)
 SIGNALS_FILE = "data/signals.json"
