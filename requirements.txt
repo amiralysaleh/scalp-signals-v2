@@ -1,0 +1,12 @@
+crypto-signal-bot/
+├── .github/workflows/
+│   └── crypto_scanner.yml
+├── src/
+│   ├── crypto_analyzer.py
+│   ├── signal_generator.py
+│   ├── telegram_sender.py
+│   ├── signal_tracker.py
+│   └── config.py
+├── data/
+│   └── signals.json
+└── requirements.txt
