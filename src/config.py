@@ -1,8 +1,8 @@
 # لیست ارزهای دیجیتالی که می‌خواهیم بررسی کنیم
 CRYPTOCURRENCIES = [
-    "BTC_USDT", "ETH_USDT", "BNB_USDT", "SOL_USDT", "XRP_USDT",
-    "ADA_USDT", "DOGE_USDT", "SHIB_USDT", "DOT_USDT", "MATIC_USDT",
-    "LTC_USDT", "AVAX_USDT", "LINK_USDT", "UNI_USDT", "ATOM_USDT",
+    "btcusdt", "ethusdt", "bnbusdt", "solusdt", "xrpusdt",
+    "adausdt", "dogeusdt", "shibusdt", "dotusdt", "maticusdt",
+    "ltcusdt", "avaxusdt", "linkusdt", "uniusdt", "atomusdt",
 ]
 
 # تنظیمات استراتژی
