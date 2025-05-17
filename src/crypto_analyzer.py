@@ -15,11 +15,23 @@ from signal_tracker import save_signal
 def fetch_kline_data(symbol, size=100, interval="30min"):
     """دریافت داده‌های کندل از KuCoin"""
     url = f"{KUCOIN_BASE_URL}{KUCOIN_KLINE_ENDPOINT}"
+    # محاسبه زمان شروع برای درخواست کندل‌ها
+    end_time = int(time.time())
+    # تبدیل تایم‌فریم به ثانیه (30min = 1800 seconds)
+    if interval == "30min":
+        interval_seconds = 1800
+    elif interval == "1hour":
+        interval_seconds = 3600
+    else:
+        interval_seconds = 1800  # پیش‌فرض 30 دقیقه
+        
+    start_time = end_time - (size * interval_seconds)
+    
     params = {
         "symbol": symbol,
         "type": interval,
-        "startAt": int(time.time()) - (size * 1800),  # 30min = 1800 seconds
-        "endAt": int(time.time())
+        "startAt": start_time,
+        "endAt": end_time
     }
     try:
         response = requests.get(url, params=params)
@@ -37,7 +49,12 @@ def fetch_kline_data(symbol, size=100, interval="30min"):
         
         # بازآرایی ستون‌ها برای سازگاری با کد فعلی
         df = df[["timestamp", "open", "high", "low", "close", "volume"]]
+        
+        # تبدیل داده‌ها به فرمت عددی قبل از تبدیل timestamp
+        df["timestamp"] = df["timestamp"].astype(float)
         df[["open", "high", "low", "close", "volume"]] = df[["open", "high", "low", "close", "volume"]].astype(float)
+        
+        # تبدیل timestamp به datetime
         df["timestamp"] = pd.to_datetime(df["timestamp"], unit="s")
         
         # معکوس کردن داده‌ها چون KuCoin داده‌ها را از جدید به قدیم مرتب می‌کند
