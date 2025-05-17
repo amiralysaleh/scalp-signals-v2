@@ -60,4 +60,46 @@ def generate_signals(df, symbol):
 
     # Bollinger Bands: لمس باند بالا
     if latest_row['close'] >= latest_row['bb_upper'] * 0.99:
-        sell_reasons.append(f"قیمت نزدی
+        sell_reasons.append(f"قیمت نزدیک/بالای باند بالایی بولینگر")
+
+    # سطح مقاومت
+    if latest_row['close'] >= latest_row['resistance'] * 0.99:
+        sell_reasons.append(f"قیمت در نزدیکی/روی سطح مقاومت ({latest_row['resistance']:.4f})")
+
+    # ایجاد سیگنال‌ها
+    current_time = datetime.now(pytz.timezone('Asia/Tehran')).strftime("%Y-%m-%d %H:%M:%S")
+
+    # کاهش تعداد دلایل مورد نیاز از 3 به 2 برای افزایش احتمال تولید سیگنال
+    if len(buy_reasons) >= 2:
+        target_price = current_price * (1 + SCALPING_SETTINGS['profit_target_percent'] / 100)
+        stop_loss = current_price * (1 - SCALPING_SETTINGS['stop_loss_percent'] / 100)
+
+        signals.append({
+            'symbol': symbol,
+            'type': 'خرید',
+            'current_price': f"{current_price:.8f}",
+            'target_price': f"{target_price:.8f}",
+            'stop_loss': f"{stop_loss:.8f}",
+            'time': current_time,
+            'reasons': "\n".join([f"✅ {reason}" for reason in buy_reasons]),
+            'status': 'active',
+            'created_at': current_time
+        })
+
+    if len(sell_reasons) >= 2:
+        target_price = current_price * (1 - SCALPING_SETTINGS['profit_target_percent'] / 100)
+        stop_loss = current_price * (1 + SCALPING_SETTINGS['stop_loss_percent'] / 100)
+
+        signals.append({
+            'symbol': symbol,
+            'type': 'فروش',
+            'current_price': f"{current_price:.8f}",
+            'target_price': f"{target_price:.8f}",
+            'stop_loss': f"{stop_loss:.8f}",
+            'time': current_time,
+            'reasons': "\n".join([f"✅ {reason}" for reason in sell_reasons]),
+            'status': 'active',
+            'created_at': current_time
+        })
+
+    return signals
