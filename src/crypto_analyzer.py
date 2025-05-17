@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 import time
-from datetime import datetime, timedelta
+from datetime import datetime
 import pytz
 import ta
 import traceback
@@ -12,37 +12,34 @@ from signal_generator import generate_signals
 from telegram_sender import send_telegram_message
 from signal_tracker import save_signal
 
-def fetch_kline_data(symbol_id, days=1):
-    """دریافت داده‌های کندل از CoinGecko"""
-    url = f"{COINGECKO_BASE_URL}{COINGECKO_MARKET_CHART_ENDPOINT}".format(id=symbol_id)
+def fetch_kline_data(symbol, size=100, interval="30m"):
+    """دریافت داده‌های کندل از Binance"""
+    url = f"{BINANCE_BASE_URL}{BINANCE_KLINE_ENDPOINT}"
     params = {
-        "vs_currency": "usd",
-        "days": days,
-        "interval": "minute"
+        "symbol": symbol,
+        "interval": interval,
+        "limit": size
     }
     try:
         response = requests.get(url, params=params)
         data = response.json()
 
         if response.status_code != 200:
-            print(f"Error fetching data for {symbol_id}: {data}")
+            print(f"Error fetching data for {symbol}: {data}")
             return None
 
         # تبدیل داده‌ها به DataFrame
-        prices = pd.DataFrame(data["prices"], columns=["timestamp", "price"])
-        volumes = pd.DataFrame(data["total_volumes"], columns=["timestamp", "volume"])
-
-        df = pd.merge(prices, volumes, on="timestamp")
-        df.columns = ["timestamp", "close", "volume"]
+        df = pd.DataFrame(data, columns=[
+            "timestamp", "open", "high", "low", "close", "volume", 
+            "close_time", "quote_asset_volume", "number_of_trades", 
+            "taker_buy_base_asset_volume", "taker_buy_quote_asset_volume", "ignore"
+        ])
+        df = df[["timestamp", "open", "high", "low", "close", "volume"]]
+        df[["open", "high", "low", "close", "volume"]] = df[["open", "high", "low", "close", "volume"]].astype(float)
         df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms")
-        df["open"] = df["close"].shift(1)
-        df["high"] = df["close"].rolling(2).max()
-        df["low"] = df["close"].rolling(2).min()
-        df.dropna(inplace=True)
-
         return df
     except Exception as e:
-        print(f"Error fetching data for {symbol_id}: {e}")
+        print(f"Error fetching data for {symbol}: {e}")
         print(f"Details: {traceback.format_exc()}")
         return None
 
@@ -94,7 +91,7 @@ def main():
     for crypto in CRYPTOCURRENCIES:
         print(f"Analyzing {crypto}...")
         try:
-            df = fetch_kline_data(crypto, days=TIMEFRAME_IN_DAYS)
+            df = fetch_kline_data(crypto, size=KLINE_SIZE, interval=TIMEFRAME)
             if df is None:
                 print(f"Skipping {crypto} due to data issues.")
                 continue
