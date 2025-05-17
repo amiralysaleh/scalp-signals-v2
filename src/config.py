@@ -36,5 +36,5 @@ KUCOIN_TICKER_ENDPOINT = "/api/v1/market/orderbook/level1"
 
 # تایم فریم و تعداد کندل‌ها
 TIMEFRAME = "30min"  # تایم فریم 30 دقیقه در کوکوین
-KLINE_SIZE = 500   # تعداد کندل‌ها
+KLINE_SIZE = 300   # تعداد کندل‌ها
 SIGNALS_FILE = "data/signals.json"
