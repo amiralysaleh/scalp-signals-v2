@@ -1,7 +1,7 @@
 # لیست ارزهای دیجیتال برای بررسی - نمادهای سازگار با KuCoin
 CRYPTOCURRENCIES = [
     "BTC-USDT", "ETH-USDT", "BNB-USDT", "SOL-USDT", "XRP-USDT",
-    "ADA-USDT", "DOGE-USDT", "SHIB-USDT", "DOT-USDT", "MATIC-USDT",
+    "ADA-USDT", "DOGE-USDT", "SHIB-USDT", "DOT-USDT", 
     "LTC-USDT", "AVAX-USDT", "LINK-USDT", "UNI-USDT", "ATOM-USDT",
 ]
 
