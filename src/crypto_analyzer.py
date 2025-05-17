@@ -12,31 +12,37 @@ from signal_generator import generate_signals
 from telegram_sender import send_telegram_message
 from signal_tracker import save_signal
 
-def fetch_kline_data(symbol, size=100, interval="30m"):
-    """دریافت داده‌های کندل از Binance"""
-    url = f"{BINANCE_BASE_URL}{BINANCE_KLINE_ENDPOINT}"
+def fetch_kline_data(symbol, size=100, interval="30min"):
+    """دریافت داده‌های کندل از KuCoin"""
+    url = f"{KUCOIN_BASE_URL}{KUCOIN_KLINE_ENDPOINT}"
     params = {
         "symbol": symbol,
-        "interval": interval,
-        "limit": size
+        "type": interval,
+        "startAt": int(time.time()) - (size * 1800),  # 30min = 1800 seconds
+        "endAt": int(time.time())
     }
     try:
         response = requests.get(url, params=params)
         data = response.json()
 
-        if response.status_code != 200:
+        if not data.get('data'):
             print(f"Error fetching data for {symbol}: {data}")
             return None
 
         # تبدیل داده‌ها به DataFrame
-        df = pd.DataFrame(data, columns=[
-            "timestamp", "open", "high", "low", "close", "volume", 
-            "close_time", "quote_asset_volume", "number_of_trades", 
-            "taker_buy_base_asset_volume", "taker_buy_quote_asset_volume", "ignore"
+        # ساختار داده‌های KuCoin: [timestamp, open, close, high, low, volume, turnover]
+        df = pd.DataFrame(data['data'], columns=[
+            "timestamp", "open", "close", "high", "low", "volume", "turnover"
         ])
+        
+        # بازآرایی ستون‌ها برای سازگاری با کد فعلی
         df = df[["timestamp", "open", "high", "low", "close", "volume"]]
         df[["open", "high", "low", "close", "volume"]] = df[["open", "high", "low", "close", "volume"]].astype(float)
-        df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms")
+        df["timestamp"] = pd.to_datetime(df["timestamp"], unit="s")
+        
+        # معکوس کردن داده‌ها چون KuCoin داده‌ها را از جدید به قدیم مرتب می‌کند
+        df = df.iloc[::-1].reset_index(drop=True)
+        
         return df
     except Exception as e:
         print(f"Error fetching data for {symbol}: {e}")
