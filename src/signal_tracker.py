@@ -127,7 +127,9 @@ def report_signals_status():
             for signal in active_signals:
                 current_price = get_current_price(signal['symbol'])
                 if current_price is not None:
-                    price_diff = ((current_price - float(signal['entry_price'])) / float(signal['entry_price'])) * 100
+                    # استفاده از current_price به جای entry_price
+                    entry_price = float(signal['current_price'])
+                    price_diff = ((current_price - entry_price) / entry_price) * 100
                     price_diff_str = f"{price_diff:.2f}%"
                     if price_diff > 0:
                         price_diff_str = f"+{price_diff_str}"
