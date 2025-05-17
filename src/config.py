@@ -1,9 +1,15 @@
-# لیست ارزهای دیجیتال برای بررسی
+# لیست ارزهای دیجیتال برای بررسی - نمادهای سازگار با KuCoin
 CRYPTOCURRENCIES = [
     "BTC-USDT", "ETH-USDT", "BNB-USDT", "SOL-USDT", "XRP-USDT",
     "ADA-USDT", "DOGE-USDT", "SHIB-USDT", "DOT-USDT", "MATIC-USDT",
     "LTC-USDT", "AVAX-USDT", "LINK-USDT", "UNI-USDT", "ATOM-USDT",
 ]
+
+# جایگزین کردن نمادهای غیر پشتیبانی شده
+# بررسی دقیق نمادهای پشتیبانی شده در KuCoin
+KUCOIN_SUPPORTED_PAIRS = {
+    "MATIC-USDT": "POLY-USDT",  # جایگزین برای MATIC که پشتیبانی نمی‌شود
+}
 
 # تنظیمات استراتژی اسکالپینگ
 SCALPING_SETTINGS = {
