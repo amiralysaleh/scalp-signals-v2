@@ -34,8 +34,11 @@ def save_signals(signals):
         print(f"Error saving signals: {e}")
 
 def save_signal(signal):
-    """افزودن سیگنال جدید"""
+    """افزودن سیگنال جدید به فایل و افزودن فیلد entry_price در صورت عدم وجود"""
     try:
+        # اگر فیلد entry_price وجود ندارد، مقدار اولیه را از current_price قرار می‌دهیم.
+        if 'entry_price' not in signal:
+            signal['entry_price'] = signal.get('current_price')
         signals = load_signals()
         signals.append(signal)
         save_signals(signals)
@@ -47,7 +50,6 @@ def get_current_price(symbol):
     """دریافت قیمت فعلی از KuCoin"""
     url = f"{KUCOIN_BASE_URL}{KUCOIN_TICKER_ENDPOINT}"
     params = {"symbol": symbol}
-
     try:
         response = requests.get(url, params=params)
         response.raise_for_status()
@@ -79,27 +81,28 @@ def update_signal_status():
             target_price = float(signal['target_price'])
             stop_loss = float(signal['stop_loss'])
 
+            now_str = datetime.now(pytz.timezone('Asia/Tehran')).strftime("%Y-%m-%d %H:%M:%S")
             if signal['type'] == 'خرید':
                 if current_price >= target_price:
                     signal['status'] = 'target_reached'
                     signal['closed_price'] = str(current_price)
-                    signal['closed_at'] = datetime.now(pytz.timezone('Asia/Tehran')).strftime("%Y-%m-%d %H:%M:%S")
+                    signal['closed_at'] = now_str
                     updated = True
                 elif current_price <= stop_loss:
                     signal['status'] = 'stop_loss'
                     signal['closed_price'] = str(current_price)
-                    signal['closed_at'] = datetime.now(pytz.timezone('Asia/Tehran')).strftime("%Y-%m-%d %H:%M:%S")
+                    signal['closed_at'] = now_str
                     updated = True
             elif signal['type'] == 'فروش':
                 if current_price <= target_price:
                     signal['status'] = 'target_reached'
                     signal['closed_price'] = str(current_price)
-                    signal['closed_at'] = datetime.now(pytz.timezone('Asia/Tehran')).strftime("%Y-%m-%d %H:%M:%S")
+                    signal['closed_at'] = now_str
                     updated = True
                 elif current_price >= stop_loss:
                     signal['status'] = 'stop_loss'
                     signal['closed_price'] = str(current_price)
-                    signal['closed_at'] = datetime.now(pytz.timezone('Asia/Tehran')).strftime("%Y-%m-%d %H:%M:%S")
+                    signal['closed_at'] = now_str
                     updated = True
 
         if updated:
@@ -110,9 +113,10 @@ def update_signal_status():
 def report_signals_status():
     """ارسال گزارش وضعیت سیگنال‌ها"""
     try:
+        # ابتدا وضعیت سیگنال‌ها به‌روز می‌شود
         update_signal_status()
         signals = load_signals()
-        
+
         active_signals = [s for s in signals if s.get('status') == 'active']
         target_reached = [s for s in signals if s.get('status') == 'target_reached']
         stop_loss_signals = [s for s in signals if s.get('status') == 'stop_loss']
@@ -127,8 +131,8 @@ def report_signals_status():
             for signal in active_signals:
                 current_price = get_current_price(signal['symbol'])
                 if current_price is not None:
-                    # استفاده از current_price به جای entry_price
-                    entry_price = float(signal['current_price'])
+                    # اگر entry_price موجود نباشد، به عنوان پیش‌فرض از current_price استفاده کنیم
+                    entry_price = float(signal.get('entry_price', signal['current_price']))
                     price_diff = ((current_price - entry_price) / entry_price) * 100
                     price_diff_str = f"{price_diff:.2f}%"
                     if price_diff > 0:
@@ -146,7 +150,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Track and report signal status')
     parser.add_argument('--report', action='store_true', help='Generate and send a status report')
     args = parser.parse_args()
-    
+
     try:
         if args.report:
             report_signals_status()
