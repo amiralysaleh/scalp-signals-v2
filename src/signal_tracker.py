@@ -1,9 +1,10 @@
 import json
 import os
 import requests
+import argparse
 from datetime import datetime
 import pytz
-from config import SIGNALS_FILE, BINANCE_BASE_URL, BINANCE_TICKER_ENDPOINT
+from config import SIGNALS_FILE, KUCOIN_BASE_URL, KUCOIN_TICKER_ENDPOINT
 from telegram_sender import send_telegram_message
 
 def load_signals():
@@ -27,15 +28,15 @@ def save_signal(signal):
     print(f"Signal saved: {signal['symbol']} {signal['type']}")
 
 def get_current_price(symbol):
-    """دریافت قیمت فعلی از Binance"""
-    url = f"{BINANCE_BASE_URL}{BINANCE_TICKER_ENDPOINT}"
+    """دریافت قیمت فعلی از KuCoin"""
+    url = f"{KUCOIN_BASE_URL}{KUCOIN_TICKER_ENDPOINT}"
     params = {"symbol": symbol}
 
     try:
         response = requests.get(url, params=params)
         data = response.json()
-        if "price" in data:
-            return float(data["price"])
+        if data.get('data') and data['data'].get('price'):
+            return float(data['data']['price'])
         else:
             print(f"No price data returned for {symbol}")
             return None
@@ -99,3 +100,13 @@ def report_signals_status():
     message += f"❌ سیگنال‌های ناموفق: {len(stop_loss_signals)}\n"
 
     send_telegram_message(message)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Track and report signal status')
+    parser.add_argument('--report', action='store_true', help='Generate and send a status report')
+    args = parser.parse_args()
+    
+    if args.report:
+        report_signals_status()
+    else:
+        update_signal_status()
