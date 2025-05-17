@@ -60,6 +60,7 @@ def fetch_kline_data(symbol, size=100, interval="30min"):
         # معکوس کردن داده‌ها چون KuCoin داده‌ها را از جدید به قدیم مرتب می‌کند
         df = df.iloc[::-1].reset_index(drop=True)
         
+        print(f"Received {len(df)} candles for {symbol}")
         return df
     except Exception as e:
         print(f"Error fetching data for {symbol}: {e}")
@@ -128,6 +129,10 @@ def main():
             if prepared_df is None:
                 print(f"Skipping {crypto} due to preparation issues.")
                 continue
+
+            # نمایش مقادیر اندیکاتورها برای آخرین کندل
+            last_row = prepared_df.iloc[-1]
+            print(f"Last RSI: {last_row['rsi']:.2f}, EMA Short: {last_row['ema_short']:.2f}, MACD: {last_row['macd']:.6f}")
 
             # استفاده از نام اصلی ارز برای نمایش در سیگنال
             signals = generate_signals(prepared_df, crypto)
