@@ -24,17 +24,17 @@ CRYPTOCURRENCIES = [
 ]
 
 # جایگزین کردن نمادهای غیر پشتیبانی شده
-# بررسی دقیق نمادهای پشتیبانی شده در KuCoin
+
 KUCOIN_SUPPORTED_PAIRS = {
-    "MATIC-USDT": "POLY-USDT",  # جایگزین برای MATIC که پشتیبانی نمی‌شود
+    "MATIC-USDT": "POLY-USDT",
 }
 
-# تنظیمات استراتژی اسکالپینگ
+# تنظیمات پیشرفته استراتژی
 SCALPING_SETTINGS = {
     'rsi_period': 14,
-    'rsi_overbought': 70,
-    'rsi_oversold': 30,
-    'ema_short': 9,
+    'rsi_overbought': 65,
+    'rsi_oversold': 35,
+    'ema_short': 8,
     'ema_medium': 21,
     'ema_long': 50,
     'macd_fast': 12,
@@ -42,17 +42,16 @@ SCALPING_SETTINGS = {
     'macd_signal': 9,
     'bb_period': 20,
     'bb_std': 2,
-    'volume_change_threshold': 1.5,  # تغییر حجم 50٪
-    'profit_target_percent': 1.5,    # هدف سود 1.5٪
-    'stop_loss_percent': 0.7,        # حد ضرر 0.7٪
+    'volume_change_threshold': 1.5,
+    'min_volatility': 0.5,  # حداقل نوسان مورد نیاز (بر اساس ATR)
+    'score_threshold': 5.0,  # حداقل امتیاز برای تایید سیگنال
 }
 
-# تنظیمات API کوکوین
 KUCOIN_BASE_URL = "https://api.kucoin.com"
 KUCOIN_KLINE_ENDPOINT = "/api/v1/market/candles"
 KUCOIN_TICKER_ENDPOINT = "/api/v1/market/orderbook/level1"
-
-# تایم فریم و تعداد کندل‌ها
-TIMEFRAME = "30min"  # تایم فریم 30 دقیقه در کوکوین
-KLINE_SIZE = 500   # تعداد کندل‌ها
+TIMEFRAME = "30min"
+KLINE_SIZE = 500
+HIGHER_TIMEFRAME = "4hour"
 SIGNALS_FILE = "data/signals.json"
+PERFORMANCE_FILE = "data/performance.json"
