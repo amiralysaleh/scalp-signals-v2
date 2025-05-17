@@ -114,7 +114,12 @@ def main():
     for crypto in CRYPTOCURRENCIES:
         print(f"Analyzing {crypto}...")
         try:
-            df = fetch_kline_data(crypto, size=KLINE_SIZE, interval=TIMEFRAME)
+            # بررسی و جایگزینی نمادهای غیرپشتیبانی شده
+            trading_symbol = KUCOIN_SUPPORTED_PAIRS.get(crypto, crypto)
+            if trading_symbol != crypto:
+                print(f"Using {trading_symbol} instead of {crypto}")
+                
+            df = fetch_kline_data(trading_symbol, size=KLINE_SIZE, interval=TIMEFRAME)
             if df is None:
                 print(f"Skipping {crypto} due to data issues.")
                 continue
@@ -124,6 +129,7 @@ def main():
                 print(f"Skipping {crypto} due to preparation issues.")
                 continue
 
+            # استفاده از نام اصلی ارز برای نمایش در سیگنال
             signals = generate_signals(prepared_df, crypto)
             if signals:
                 for signal in signals:
