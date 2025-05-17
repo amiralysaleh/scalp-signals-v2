@@ -1,8 +1,8 @@
 # لیست ارزهای دیجیتال برای بررسی
 CRYPTOCURRENCIES = [
-    "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT",
-    "ADAUSDT", "DOGEUSDT", "SHIBUSDT", "DOTUSDT", "MATICUSDT",
-    "LTCUSDT", "AVAXUSDT", "LINKUSDT", "UNIUSDT", "ATOMUSDT",
+    "BTC-USDT", "ETH-USDT", "BNB-USDT", "SOL-USDT", "XRP-USDT",
+    "ADA-USDT", "DOGE-USDT", "SHIB-USDT", "DOT-USDT", "MATIC-USDT",
+    "LTC-USDT", "AVAX-USDT", "LINK-USDT", "UNI-USDT", "ATOM-USDT",
 ]
 
 # تنظیمات استراتژی اسکالپینگ
@@ -23,12 +23,12 @@ SCALPING_SETTINGS = {
     'stop_loss_percent': 0.7,        # حد ضرر 0.7٪
 }
 
-# تنظیمات API
-BINANCE_BASE_URL = "https://api.binance.com"
-BINANCE_KLINE_ENDPOINT = "/api/v3/klines"
-BINANCE_TICKER_ENDPOINT = "/api/v3/ticker/price"
+# تنظیمات API کوکوین
+KUCOIN_BASE_URL = "https://api.kucoin.com"
+KUCOIN_KLINE_ENDPOINT = "/api/v1/market/candles"
+KUCOIN_TICKER_ENDPOINT = "/api/v1/market/orderbook/level1"
 
 # تایم فریم و تعداد کندل‌ها
-TIMEFRAME = "30m"  # تایم فریم 30 دقیقه
+TIMEFRAME = "30min"  # تایم فریم 30 دقیقه در کوکوین
 KLINE_SIZE = 100   # تعداد کندل‌ها
 SIGNALS_FILE = "data/signals.json"
