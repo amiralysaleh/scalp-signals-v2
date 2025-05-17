@@ -1,8 +1,8 @@
 # لیست ارزهای دیجیتال برای بررسی
 CRYPTOCURRENCIES = [
-    "bitcoin", "ethereum", "binancecoin", "solana", "ripple",
-    "cardano", "dogecoin", "shiba-inu", "polkadot", "matic-network",
-    "litecoin", "avalanche-2", "chainlink", "uniswap", "cosmos"
+    "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT",
+    "ADAUSDT", "DOGEUSDT", "SHIBUSDT", "DOTUSDT", "MATICUSDT",
+    "LTCUSDT", "AVAXUSDT", "LINKUSDT", "UNIUSDT", "ATOMUSDT",
 ]
 
 # تنظیمات استراتژی اسکالپینگ
@@ -24,10 +24,11 @@ SCALPING_SETTINGS = {
 }
 
 # تنظیمات API
-COINGECKO_BASE_URL = "https://api.coingecko.com/api/v3"
-COINGECKO_MARKET_CHART_ENDPOINT = "/coins/{id}/market_chart"
-COINGECKO_PRICE_ENDPOINT = "/simple/price"
+BINANCE_BASE_URL = "https://api.binance.com"
+BINANCE_KLINE_ENDPOINT = "/api/v3/klines"
+BINANCE_TICKER_ENDPOINT = "/api/v3/ticker/price"
 
 # تایم فریم و تعداد کندل‌ها
-TIMEFRAME_IN_DAYS = 1  # تعداد روزها برای دریافت داده‌های کندل (1 روز = 24 ساعت)
+TIMEFRAME = "30m"  # تایم فریم 30 دقیقه
+KLINE_SIZE = 100   # تعداد کندل‌ها
 SIGNALS_FILE = "data/signals.json"
