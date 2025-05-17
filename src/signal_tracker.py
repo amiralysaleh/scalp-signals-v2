@@ -3,7 +3,7 @@ import os
 import requests
 from datetime import datetime
 import pytz
-from config import SIGNALS_FILE, COINGECKO_BASE_URL, COINGECKO_PRICE_ENDPOINT
+from config import SIGNALS_FILE, BINANCE_BASE_URL, BINANCE_TICKER_ENDPOINT
 from telegram_sender import send_telegram_message
 
 def load_signals():
@@ -26,24 +26,21 @@ def save_signal(signal):
     save_signals(signals)
     print(f"Signal saved: {signal['symbol']} {signal['type']}")
 
-def get_current_price(symbol_id):
-    """دریافت قیمت فعلی از CoinGecko"""
-    url = f"{COINGECKO_BASE_URL}{COINGECKO_PRICE_ENDPOINT}"
-    params = {
-        "ids": symbol_id,
-        "vs_currencies": "usd"
-    }
+def get_current_price(symbol):
+    """دریافت قیمت فعلی از Binance"""
+    url = f"{BINANCE_BASE_URL}{BINANCE_TICKER_ENDPOINT}"
+    params = {"symbol": symbol}
 
     try:
         response = requests.get(url, params=params)
         data = response.json()
-        if symbol_id in data:
-            return float(data[symbol_id]["usd"])
+        if "price" in data:
+            return float(data["price"])
         else:
-            print(f"No price data returned for {symbol_id}")
+            print(f"No price data returned for {symbol}")
             return None
     except Exception as e:
-        print(f"Error fetching price for {symbol_id}: {e}")
+        print(f"Error fetching price for {symbol}: {e}")
         return None
 
 def update_signal_status():
