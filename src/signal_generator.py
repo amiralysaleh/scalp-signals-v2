@@ -41,6 +41,9 @@ def generate_signals(df, symbol):
     if latest_row['close'] <= latest_row['support'] * 1.01:
         buy_reasons.append(f"قیمت در نزدیکی/روی سطح حمایت ({latest_row['support']:.4f})")
 
+if latest_row['close'] > latest_row['ema_long']:
+    buy_reasons.append("قیمت بالای EMA طولانی‌مدت (روند صعودی)")
+
     # ----- استراتژی فروش -----
     sell_reasons = []
 
@@ -66,11 +69,13 @@ def generate_signals(df, symbol):
     if latest_row['close'] >= latest_row['resistance'] * 0.99:
         sell_reasons.append(f"قیمت در نزدیکی/روی سطح مقاومت ({latest_row['resistance']:.4f})")
 
+if latest_row['close'] < latest_row['ema_long']:
+    sell_reasons.append("قیمت زیر EMA طولانی‌مدت (روند نزولی)")
     # ایجاد سیگنال‌ها
     current_time = datetime.now(pytz.timezone('Asia/Tehran')).strftime("%Y-%m-%d %H:%M:%S")
 
     # کاهش تعداد دلایل مورد نیاز از 3 به 2 برای افزایش احتمال تولید سیگنال
-    if len(buy_reasons) >= 3:
+    if len(buy_reasons) >= 4:
         target_price = current_price * (1 + SCALPING_SETTINGS['profit_target_percent'] / 100)
         stop_loss = current_price * (1 - SCALPING_SETTINGS['stop_loss_percent'] / 100)
 
@@ -86,7 +91,7 @@ def generate_signals(df, symbol):
             'created_at': current_time
         })
 
-    if len(sell_reasons) >= 3:
+    if len(sell_reasons) >= 4:
         target_price = current_price * (1 - SCALPING_SETTINGS['profit_target_percent'] / 100)
         stop_loss = current_price * (1 + SCALPING_SETTINGS['stop_loss_percent'] / 100)
 
