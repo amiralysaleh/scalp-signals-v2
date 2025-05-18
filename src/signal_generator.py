@@ -70,7 +70,7 @@ def generate_signals(df, symbol):
     current_time = datetime.now(pytz.timezone('Asia/Tehran')).strftime("%Y-%m-%d %H:%M:%S")
 
     # کاهش تعداد دلایل مورد نیاز از 3 به 2 برای افزایش احتمال تولید سیگنال
-    if len(buy_reasons) >= 4:
+    if len(buy_reasons) >= 3:
         target_price = current_price * (1 + SCALPING_SETTINGS['profit_target_percent'] / 100)
         stop_loss = current_price * (1 - SCALPING_SETTINGS['stop_loss_percent'] / 100)
 
@@ -86,7 +86,7 @@ def generate_signals(df, symbol):
             'created_at': current_time
         })
 
-    if len(sell_reasons) >= 4:
+    if len(sell_reasons) >= 3:
         target_price = current_price * (1 - SCALPING_SETTINGS['profit_target_percent'] / 100)
         stop_loss = current_price * (1 + SCALPING_SETTINGS['stop_loss_percent'] / 100)
 
