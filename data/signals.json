@@ -1663,9 +1663,11 @@
     "stop_loss": "0.27059250",
     "time": "2025-05-18 15:57:18",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (1.51X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.2719)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 15:57:18",
-    "entry_price": "0.27250000"
+    "entry_price": "0.27250000",
+    "closed_price": "0.2651",
+    "closed_at": "2025-05-18 23:39:36"
   },
   {
     "symbol": "KCS-USDT",
@@ -1715,9 +1717,11 @@
     "stop_loss": "0.01827716",
     "time": "2025-05-18 15:58:39",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (8.17X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.0183)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 15:58:39",
-    "entry_price": "0.01840600"
+    "entry_price": "0.01840600",
+    "closed_price": "0.017698",
+    "closed_at": "2025-05-18 23:39:37"
   },
   {
     "symbol": "AUDIO-USDT",
@@ -1947,9 +1951,11 @@
     "stop_loss": "106148.07140000",
     "time": "2025-05-18 19:45:57",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (80.07) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (105675.9000)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:45:57",
-    "entry_price": "105410.20000000"
+    "entry_price": "105410.20000000",
+    "closed_price": "103769.8",
+    "closed_at": "2025-05-18 23:39:37"
   },
   {
     "symbol": "ETH-USDT",
@@ -1959,9 +1965,11 @@
     "stop_loss": "2588.89630000",
     "time": "2025-05-18 19:45:59",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (71.22) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (2587.2200)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:45:59",
-    "entry_price": "2570.90000000"
+    "entry_price": "2570.90000000",
+    "closed_price": "2377.03",
+    "closed_at": "2025-05-18 23:39:37"
   },
   {
     "symbol": "SOL-USDT",
@@ -1971,9 +1979,11 @@
     "stop_loss": "177.21890900",
     "time": "2025-05-18 19:46:01",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (78.78) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (176.7690)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:01",
-    "entry_price": "175.98700000"
+    "entry_price": "175.98700000",
+    "closed_price": "166.175",
+    "closed_at": "2025-05-18 23:39:38"
   },
   {
     "symbol": "XRP-USDT",
@@ -1983,9 +1993,11 @@
     "stop_loss": "2.45362599",
     "time": "2025-05-18 19:46:03",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (77.18) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (2.4495)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:03",
-    "entry_price": "2.43657000"
+    "entry_price": "2.43657000",
+    "closed_price": "2.35932",
+    "closed_at": "2025-05-18 23:39:38"
   },
   {
     "symbol": "ADA-USDT",
@@ -1995,9 +2007,11 @@
     "stop_loss": "0.77820960",
     "time": "2025-05-18 19:46:04",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (67.16) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.7766)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:04",
-    "entry_price": "0.77280000"
+    "entry_price": "0.77280000",
+    "closed_price": "0.7268",
+    "closed_at": "2025-05-18 23:39:38"
   },
   {
     "symbol": "DOT-USDT",
@@ -2007,9 +2021,11 @@
     "stop_loss": "4.93430000",
     "time": "2025-05-18 19:46:08",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (74.70) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (4.9202)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:08",
-    "entry_price": "4.90000000"
+    "entry_price": "4.90000000",
+    "closed_price": "4.5646",
+    "closed_at": "2025-05-18 23:39:38"
   },
   {
     "symbol": "AVAX-USDT",
@@ -2019,9 +2035,11 @@
     "stop_loss": "23.85381600",
     "time": "2025-05-18 19:46:11",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (71.96) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (23.8670)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:11",
-    "entry_price": "23.68800000"
+    "entry_price": "23.68800000",
+    "closed_price": "21.824",
+    "closed_at": "2025-05-18 23:39:39"
   },
   {
     "symbol": "LINK-USDT",
@@ -2031,9 +2049,11 @@
     "stop_loss": "16.45145970",
     "time": "2025-05-18 19:46:13",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (78.68) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (16.3984)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:13",
-    "entry_price": "16.33710000"
+    "entry_price": "16.33710000",
+    "closed_price": "15.1041",
+    "closed_at": "2025-05-18 23:39:39"
   },
   {
     "symbol": "UNI-USDT",
@@ -2043,9 +2063,11 @@
     "stop_loss": "6.35910430",
     "time": "2025-05-18 19:46:14",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (78.90) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (6.3270)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:14",
-    "entry_price": "6.31490000"
+    "entry_price": "6.31490000",
+    "closed_price": "5.7589",
+    "closed_at": "2025-05-18 23:39:40"
   },
   {
     "symbol": "TRX-USDT",
@@ -2055,9 +2077,11 @@
     "stop_loss": "0.27481030",
     "time": "2025-05-18 19:46:19",
     "reasons": "\u2705 \u06a9\u0631\u0627\u0633 MACD \u0628\u0647 \u067e\u0627\u06cc\u06cc\u0646 \u062e\u0637 \u0633\u06cc\u06af\u0646\u0627\u0644\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.2747)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:19",
-    "entry_price": "0.27290000"
+    "entry_price": "0.27290000",
+    "closed_price": "0.2651",
+    "closed_at": "2025-05-18 23:39:40"
   },
   {
     "symbol": "NEAR-USDT",
@@ -2067,9 +2091,11 @@
     "stop_loss": "2.95101350",
     "time": "2025-05-18 19:46:21",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (78.48) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (2.9442)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:21",
-    "entry_price": "2.93050000"
+    "entry_price": "2.93050000",
+    "closed_price": "2.6759",
+    "closed_at": "2025-05-18 23:39:40"
   },
   {
     "symbol": "ETC-USDT",
@@ -2079,9 +2105,11 @@
     "stop_loss": "19.15898060",
     "time": "2025-05-18 19:46:26",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (76.96) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (19.1132)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:26",
-    "entry_price": "19.02580000"
+    "entry_price": "19.02580000",
+    "closed_price": "17.8058",
+    "closed_at": "2025-05-18 23:39:40"
   },
   {
     "symbol": "VET-USDT",
@@ -2091,9 +2119,11 @@
     "stop_loss": "0.02955545",
     "time": "2025-05-18 19:46:32",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (75.25) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.0295)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:32",
-    "entry_price": "0.02935000"
+    "entry_price": "0.02935000",
+    "closed_price": "0.02744",
+    "closed_at": "2025-05-18 23:39:40"
   },
   {
     "symbol": "ALGO-USDT",
@@ -2103,9 +2133,11 @@
     "stop_loss": "0.23191210",
     "time": "2025-05-18 19:46:36",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (75.89) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.2316)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:36",
-    "entry_price": "0.23030000"
+    "entry_price": "0.23030000",
+    "closed_price": "0.2151",
+    "closed_at": "2025-05-18 23:39:41"
   },
   {
     "symbol": "SUI-USDT",
@@ -2115,9 +2147,11 @@
     "stop_loss": "4.00574530",
     "time": "2025-05-18 19:46:39",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (72.12) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (4.0040)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:39",
-    "entry_price": "3.97790000"
+    "entry_price": "3.97790000",
+    "closed_price": "3.7402",
+    "closed_at": "2025-05-18 23:39:41"
   },
   {
     "symbol": "FLOW-USDT",
@@ -2127,9 +2161,11 @@
     "stop_loss": "0.42737080",
     "time": "2025-05-18 19:46:41",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (73.74) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.4263)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:41",
-    "entry_price": "0.42440000"
+    "entry_price": "0.42440000",
+    "closed_price": "0.396",
+    "closed_at": "2025-05-18 23:39:41"
   },
   {
     "symbol": "SAND-USDT",
@@ -2139,9 +2175,11 @@
     "stop_loss": "0.32433456",
     "time": "2025-05-18 19:46:48",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (72.60) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.3240)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:48",
-    "entry_price": "0.32208000"
+    "entry_price": "0.32208000",
+    "closed_price": "0.30374",
+    "closed_at": "2025-05-18 23:39:41"
   },
   {
     "symbol": "MINA-USDT",
@@ -2151,9 +2189,11 @@
     "stop_loss": "0.26453890",
     "time": "2025-05-18 19:46:56",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (71.24) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.2643)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:56",
-    "entry_price": "0.26270000"
+    "entry_price": "0.26270000",
+    "closed_price": "0.2434",
+    "closed_at": "2025-05-18 23:39:41"
   },
   {
     "symbol": "ENJ-USDT",
@@ -2163,9 +2203,11 @@
     "stop_loss": "0.09395310",
     "time": "2025-05-18 19:46:58",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (73.51) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.0939)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:46:58",
-    "entry_price": "0.09330000"
+    "entry_price": "0.09330000",
+    "closed_price": "0.0859",
+    "closed_at": "2025-05-18 23:39:42"
   },
   {
     "symbol": "COMP-USDT",
@@ -2175,9 +2217,11 @@
     "stop_loss": "46.09039000",
     "time": "2025-05-18 19:47:01",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (72.86) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (45.9100)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:47:01",
-    "entry_price": "45.77000000"
+    "entry_price": "45.77000000",
+    "closed_price": "43.03",
+    "closed_at": "2025-05-18 23:39:42"
   },
   {
     "symbol": "ZEC-USDT",
@@ -2187,9 +2231,11 @@
     "stop_loss": "42.15503400",
     "time": "2025-05-18 19:47:03",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (69.79) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (42.0800)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:47:03",
-    "entry_price": "41.86200000"
+    "entry_price": "41.86200000",
+    "closed_price": "40.079",
+    "closed_at": "2025-05-18 23:39:42"
   },
   {
     "symbol": "DASH-USDT",
@@ -2199,9 +2245,11 @@
     "stop_loss": "24.03709000",
     "time": "2025-05-18 19:47:07",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (68.08) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (24.0100)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:47:07",
-    "entry_price": "23.87000000"
+    "entry_price": "23.87000000",
+    "closed_price": "22.98",
+    "closed_at": "2025-05-18 23:39:42"
   },
   {
     "symbol": "ANKR-USDT",
@@ -2211,9 +2259,11 @@
     "stop_loss": "0.01950559",
     "time": "2025-05-18 19:47:18",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (69.63) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.0194)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:47:18",
-    "entry_price": "0.01937000"
+    "entry_price": "0.01937000",
+    "closed_price": "0.0183",
+    "closed_at": "2025-05-18 23:39:42"
   },
   {
     "symbol": "GLMR-USDT",
@@ -2223,9 +2273,11 @@
     "stop_loss": "0.09717550",
     "time": "2025-05-18 19:47:25",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (76.91) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.0967)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:47:25",
-    "entry_price": "0.09650000"
+    "entry_price": "0.09650000",
+    "closed_price": "0.0898",
+    "closed_at": "2025-05-18 23:39:42"
   },
   {
     "symbol": "SKL-USDT",
@@ -2235,9 +2287,11 @@
     "stop_loss": "0.02501388",
     "time": "2025-05-18 19:47:29",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (69.96) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.0250)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:47:29",
-    "entry_price": "0.02484000"
+    "entry_price": "0.02484000",
+    "closed_price": "0.02331",
+    "closed_at": "2025-05-18 23:39:43"
   },
   {
     "symbol": "API3-USDT",
@@ -2247,9 +2301,11 @@
     "stop_loss": "0.86823540",
     "time": "2025-05-18 19:47:36",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (72.38) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.8650)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:47:36",
-    "entry_price": "0.86220000"
+    "entry_price": "0.86220000",
+    "closed_price": "0.8064",
+    "closed_at": "2025-05-18 23:39:43"
   },
   {
     "symbol": "FLUX-USDT",
@@ -2259,9 +2315,11 @@
     "stop_loss": "0.30864550",
     "time": "2025-05-18 19:47:47",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (67.57) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.3090)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:47:47",
-    "entry_price": "0.30650000"
+    "entry_price": "0.30650000",
+    "closed_price": "0.2907",
+    "closed_at": "2025-05-18 23:39:43"
   },
   {
     "symbol": "PHA-USDT",
@@ -2271,9 +2329,11 @@
     "stop_loss": "0.13383030",
     "time": "2025-05-18 19:48:03",
     "reasons": "\u2705 RSI \u062f\u0631 \u0646\u0627\u062d\u06cc\u0647 overbought (66.40) \u0648 \u062f\u0631 \u062d\u0627\u0644 \u06a9\u0627\u0647\u0634\n\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0628\u0627\u0644\u0627\u06cc \u0628\u0627\u0646\u062f \u0628\u0627\u0644\u0627\u06cc\u06cc \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u0645\u0642\u0627\u0648\u0645\u062a (0.1338)",
-    "status": "active",
+    "status": "target_reached",
     "created_at": "2025-05-18 19:48:03",
-    "entry_price": "0.13290000"
+    "entry_price": "0.13290000",
+    "closed_price": "0.1253",
+    "closed_at": "2025-05-18 23:39:43"
   },
   {
     "symbol": "USDC-USDT",
@@ -2295,9 +2355,11 @@
     "stop_loss": "18.10457460",
     "time": "2025-05-18 21:49:02",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (1.77X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (18.2092)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:49:02",
-    "entry_price": "18.23220000"
+    "entry_price": "18.23220000",
+    "closed_price": "17.8087",
+    "closed_at": "2025-05-18 23:39:44"
   },
   {
     "symbol": "EGLD-USDT",
@@ -2307,9 +2369,11 @@
     "stop_loss": "18.21162000",
     "time": "2025-05-18 21:49:20",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (2.99X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (18.2800)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:49:20",
-    "entry_price": "18.34000000"
+    "entry_price": "18.34000000",
+    "closed_price": "18.15",
+    "closed_at": "2025-05-18 23:39:44"
   },
   {
     "symbol": "KCS-USDT",
@@ -2331,9 +2395,11 @@
     "stop_loss": "0.24964020",
     "time": "2025-05-18 21:49:31",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (2.41X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.2511)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:49:31",
-    "entry_price": "0.25140000"
+    "entry_price": "0.25140000",
+    "closed_price": "0.2434",
+    "closed_at": "2025-05-18 23:39:44"
   },
   {
     "symbol": "RVN-USDT",
@@ -2343,9 +2409,11 @@
     "stop_loss": "0.01214439",
     "time": "2025-05-18 21:49:39",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (14.66X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.0122)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:49:39",
-    "entry_price": "0.01223000"
+    "entry_price": "0.01223000",
+    "closed_price": "0.01198",
+    "closed_at": "2025-05-18 23:39:44"
   },
   {
     "symbol": "DASH-USDT",
@@ -2367,9 +2435,11 @@
     "stop_loss": "0.10783980",
     "time": "2025-05-18 21:49:44",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (2.50X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.1086)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:49:44",
-    "entry_price": "0.10860000"
+    "entry_price": "0.10860000",
+    "closed_price": "0.1066",
+    "closed_at": "2025-05-18 23:39:45"
   },
   {
     "symbol": "ICX-USDT",
@@ -2379,9 +2449,11 @@
     "stop_loss": "0.10406640",
     "time": "2025-05-18 21:49:47",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (2.23X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.1046)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:49:47",
-    "entry_price": "0.10480000"
+    "entry_price": "0.10480000",
+    "closed_price": "0.1024",
+    "closed_at": "2025-05-18 23:39:45"
   },
   {
     "symbol": "IOST-USDT",
@@ -2391,9 +2463,11 @@
     "stop_loss": "0.00379326",
     "time": "2025-05-18 21:49:55",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (2.58X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.0038)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:49:55",
-    "entry_price": "0.00382000"
+    "entry_price": "0.00382000",
+    "closed_price": "0.00376",
+    "closed_at": "2025-05-18 23:39:45"
   },
   {
     "symbol": "DCR-USDT",
@@ -2403,9 +2477,11 @@
     "stop_loss": "14.32899000",
     "time": "2025-05-18 21:49:58",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (3.51X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (14.4300)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:49:58",
-    "entry_price": "14.43000000"
+    "entry_price": "14.43000000",
+    "closed_price": "14.27",
+    "closed_at": "2025-05-18 23:39:45"
   },
   {
     "symbol": "LPT-USDT",
@@ -2415,9 +2491,11 @@
     "stop_loss": "5.40738150",
     "time": "2025-05-18 21:50:07",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (1.56X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (5.4430)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:50:07",
-    "entry_price": "5.44550000"
+    "entry_price": "5.44550000",
+    "closed_price": "5.2919",
+    "closed_at": "2025-05-18 23:39:46"
   },
   {
     "symbol": "OMG-USDT",
@@ -2427,9 +2505,11 @@
     "stop_loss": "0.20237340",
     "time": "2025-05-18 21:50:14",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (2.89X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.2038)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:50:14",
-    "entry_price": "0.20380000"
+    "entry_price": "0.20380000",
+    "closed_price": "0.2018",
+    "closed_at": "2025-05-18 23:39:46"
   },
   {
     "symbol": "SXP-USDT",
@@ -2439,9 +2519,11 @@
     "stop_loss": "0.19899720",
     "time": "2025-05-18 21:50:15",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (3.59X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.1994)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:50:15",
-    "entry_price": "0.20040000"
+    "entry_price": "0.20040000",
+    "closed_price": "0.1958",
+    "closed_at": "2025-05-18 23:39:46"
   },
   {
     "symbol": "REQ-USDT",
@@ -2463,9 +2545,11 @@
     "stop_loss": "0.00249243",
     "time": "2025-05-18 21:50:19",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (43.40X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.0025)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:50:19",
-    "entry_price": "0.00251000"
+    "entry_price": "0.00251000",
+    "closed_price": "0.002454",
+    "closed_at": "2025-05-18 23:39:47"
   },
   {
     "symbol": "SLP-USDT",
@@ -2475,9 +2559,11 @@
     "stop_loss": "0.00177052",
     "time": "2025-05-18 21:50:36",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (7.71X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.0018)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:50:36",
-    "entry_price": "0.00178300"
+    "entry_price": "0.00178300",
+    "closed_price": "0.001738",
+    "closed_at": "2025-05-18 23:39:47"
   },
   {
     "symbol": "AGLD-USDT",
@@ -2487,9 +2573,11 @@
     "stop_loss": "0.93977520",
     "time": "2025-05-18 21:50:38",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (4.60X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.9464)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:50:38",
-    "entry_price": "0.94640000"
+    "entry_price": "0.94640000",
+    "closed_price": "0.923",
+    "closed_at": "2025-05-18 23:39:47"
   },
   {
     "symbol": "AERGO-USDT",
@@ -2499,9 +2587,11 @@
     "stop_loss": "0.13816602",
     "time": "2025-05-18 21:50:42",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (4.34X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.1385)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:50:42",
-    "entry_price": "0.13914000"
+    "entry_price": "0.13914000",
+    "closed_price": "0.13748",
+    "closed_at": "2025-05-18 23:39:48"
   },
   {
     "symbol": "TRAC-USDT",
@@ -2511,9 +2601,11 @@
     "stop_loss": "0.42182640",
     "time": "2025-05-18 21:50:45",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (11.50X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.4229)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:50:45",
-    "entry_price": "0.42480000"
+    "entry_price": "0.42480000",
+    "closed_price": "0.41",
+    "closed_at": "2025-05-18 23:39:48"
   },
   {
     "symbol": "BAND-USDT",
@@ -2523,8 +2615,10 @@
     "stop_loss": "0.76778760",
     "time": "2025-05-18 21:50:50",
     "reasons": "\u2705 \u0642\u06cc\u0645\u062a \u0646\u0632\u062f\u06cc\u06a9/\u0632\u06cc\u0631 \u0628\u0627\u0646\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0646\u06af\u0631\n\u2705 \u0627\u0641\u0632\u0627\u06cc\u0634 \u0642\u0627\u0628\u0644 \u062a\u0648\u062c\u0647 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a (25.80X)\n\u2705 \u0642\u06cc\u0645\u062a \u062f\u0631 \u0646\u0632\u062f\u06cc\u06a9\u06cc/\u0631\u0648\u06cc \u0633\u0637\u062d \u062d\u0645\u0627\u06cc\u062a (0.7732)",
-    "status": "active",
+    "status": "stop_loss",
     "created_at": "2025-05-18 21:50:50",
-    "entry_price": "0.77320000"
+    "entry_price": "0.77320000",
+    "closed_price": "0.7498",
+    "closed_at": "2025-05-18 23:39:48"
   }
 ]
