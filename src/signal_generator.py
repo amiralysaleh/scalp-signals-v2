@@ -41,8 +41,6 @@ def generate_signals(df, symbol):
     if latest_row['close'] <= latest_row['support'] * 1.01:
         buy_reasons.append(f"قیمت در نزدیکی/روی سطح حمایت ({latest_row['support']:.4f})")
 
-if latest_row['close'] > latest_row['ema_long']:
-    buy_reasons.append("قیمت بالای EMA طولانی‌مدت (روند صعودی)")
 
     # ----- استراتژی فروش -----
     sell_reasons = []
@@ -69,8 +67,6 @@ if latest_row['close'] > latest_row['ema_long']:
     if latest_row['close'] >= latest_row['resistance'] * 0.99:
         sell_reasons.append(f"قیمت در نزدیکی/روی سطح مقاومت ({latest_row['resistance']:.4f})")
 
-if latest_row['close'] < latest_row['ema_long']:
-    sell_reasons.append("قیمت زیر EMA طولانی‌مدت (روند نزولی)")
     # ایجاد سیگنال‌ها
     current_time = datetime.now(pytz.timezone('Asia/Tehran')).strftime("%Y-%m-%d %H:%M:%S")
 
